@@ -30,16 +30,36 @@ class DashboardScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Icon(
-              Icons.home,
-              size: 100,
-              color: Colors.blue,
+            const CircleAvatar(
+              radius: 50,
+              backgroundImage: AssetImage('assets/images/logo.jpg'),
             ),
             const SizedBox(height: 16),
             const Text(
               'Selamat datang di dashboard Ayokost!',
               style: TextStyle(fontSize: 24),
               textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 32),
+            ElevatedButton(
+              onPressed: () {
+                // Aksi ketika tombol ditekan
+              },
+              child: const Text('Menu 1'),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                // Aksi ketika tombol ditekan
+              },
+              child: const Text('Menu 2'),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                // Aksi ketika tombol ditekan
+              },
+              child: const Text('Menu 3'),
             ),
           ],
         ),
